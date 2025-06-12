@@ -45,7 +45,7 @@ class Laser(pygame.sprite.Sprite):
 class Spaceship(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        ship_image1 = pygame.image.load("pixelrocket1.png").convert_alpha()
+        ship_image1 = pygame.image.load("spaceshippixel1.png").convert_alpha()
         ship_image1 = pygame.transform.rotozoom(ship_image1, -90, 0.65)
         ship_image2 = pygame.image.load("spaceshippixel2.png").convert_alpha()
         ship_image2 = pygame.transform.rotozoom(ship_image2, -90, 0.65)
