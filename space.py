@@ -17,7 +17,7 @@ score = 0
 scores = []
 collisions = []
 game_difficutly = 1.5
-title_font = pygame.font.Font('space_missile\PixelifySans-SemiBold.ttf', 80)
+title_font = pygame.font.Font('PixelifySans-SemiBold.ttf', 80)
 score_font = pygame.font.Font(None, 60)
 point_gain_font = pygame.font.Font(None, 40)
 health_bar_text = pygame.font.Font(None, 40)
@@ -45,9 +45,9 @@ class Laser(pygame.sprite.Sprite):
 class Spaceship(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        ship_image1 = pygame.image.load("space_missile\pixelrocket1.png").convert_alpha()
+        ship_image1 = pygame.image.load("pixelrocket1.png").convert_alpha()
         ship_image1 = pygame.transform.rotozoom(ship_image1, -90, 0.65)
-        ship_image2 = pygame.image.load("space_missile\spaceshippixel2.png").convert_alpha()
+        ship_image2 = pygame.image.load("spaceshippixel2.png").convert_alpha()
         ship_image2 = pygame.transform.rotozoom(ship_image2, -90, 0.65)
         self.ship_image_index = 0
         self.ship_image_list = [ship_image1, ship_image2]
@@ -78,9 +78,9 @@ class Villian(pygame.sprite.Sprite):
     def __init__(self, skin):
         super().__init__()
 
-        commander_image = pygame.image.load("space_missile\commander.png")
+        commander_image = pygame.image.load("commander.png")
         commander_image = pygame.transform.rotozoom(commander_image, 90, 0.6)
-        nuke_image = pygame.image.load("space_missile\purplenuke.png")
+        nuke_image = pygame.image.load("purplenuke.png")
         nuke_image = pygame.transform.rotozoom(nuke_image, 90, 0.3)
 
         villian_skin_list = [nuke_image, commander_image]
